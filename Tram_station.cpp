@@ -1,0 +1,27 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int count=0,c=0;
+  for(int i=0;i<n;i++)
+  {
+    int a,b;
+    cin>>a>>b;
+    if(i==0)
+    {
+    count=b;
+    c=b;
+    }
+    else
+    {
+      count=count-a;
+      count=count+b;
+      if(c<count)
+      c=count;
+    }
+  }
+  cout<<c<<endl;
+  return 0;
+}
